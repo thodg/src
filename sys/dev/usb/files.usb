@@ -502,3 +502,8 @@ file	dev/usb/uhidpp.c		uhidpp
 device	ucc: hid, hidcc, wskbddev
 attach	ucc at uhidbus
 file	dev/usb/ucc.c			ucc
+
+# Bluetooth
+device  ubt
+attach  ubt at uhub
+file    dev/usb/ubt.c

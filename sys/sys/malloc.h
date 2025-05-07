@@ -164,7 +164,7 @@
 
 #define	M_KEVENT	137	/* kqueue(2) data structures */
 
-	/*		138	   free */
+#define M_BLUETOOTH	138	/* Bluetooth */
 #define	M_SYNCACHE	139	/* SYN cache hash array */
 
 #define	M_UDFMOUNT	140	/* UDF mount structures */

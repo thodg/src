@@ -219,6 +219,9 @@ cardslot*	at cbb?
 cardbus*	at cardslot?
 pcmcia*		at cardslot?
 
+# Bluetooth
+option NETBT
+
 # USB Controllers
 xhci*	at pci?			# eXtensible Host Controller
 ehci*	at pci?			# Enhanced Host Controller
@@ -362,6 +365,7 @@ audio*	at utvfu?
 udl*	at uhub?		# DisplayLink USB displays
 wsdisplay* at udl?
 bwfm*	at uhub?		# Broadcom FullMAC
+ubt*    at uhub?                # Bluetooth
 
 puc*	at pci?			# PCI "universal" communication device
 com*	at cardbus?

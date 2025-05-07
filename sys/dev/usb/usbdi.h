@@ -35,6 +35,8 @@
 #ifndef _USBDI_H_
 #define _USBDI_H_
 
+#include <dev/usb/usb.h>
+
 struct usbd_bus;
 struct usbd_device;
 struct usbd_interface;

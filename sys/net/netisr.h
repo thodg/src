@@ -48,6 +48,7 @@
 #define NETISR_PPP	28		/* for PPP processing */
 #define NETISR_BRIDGE	29		/* for bridge processing */
 #define NETISR_PPPOE	30		/* for pppoe processing */
+#define NETISR_BT	31		/* bluetooth */
 
 #ifndef _LOCORE
 #ifdef _KERNEL

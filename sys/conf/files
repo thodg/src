@@ -63,6 +63,7 @@ define	mpls
 define	sppp
 define	wlan
 define	stoeplitz
+define  bluetooth
 
 # "Chipset" attributes.  These are the machine-independent portions
 # of device drivers.
@@ -1026,6 +1027,31 @@ file uvm/uvm_swap.c
 file uvm/uvm_swap_encrypt.c		uvm_swap_encrypt
 file uvm/uvm_unix.c
 file uvm/uvm_vnode.c
+
+# Bluetooth
+device netbt
+file netbt/bt_input.c			netbt		needs-flag
+file netbt/bt_proto.c			netbt
+file netbt/hci_event.c			netbt
+file netbt/hci_input.c			netbt
+file netbt/hci_ioctl.c			netbt
+file netbt/hci_link.c			netbt
+file netbt/hci_misc.c			netbt
+file netbt/hci_socket.c			netbt
+file netbt/hci_unit.c			netbt
+file netbt/l2cap_input.c		netbt
+file netbt/l2cap_lower.c		netbt
+file netbt/l2cap_misc.c			netbt
+file netbt/l2cap_signal.c		netbt
+file netbt/l2cap_socket.c		netbt
+file netbt/l2cap_upper.c		netbt
+file netbt/rfcomm_dlc.c			netbt
+file netbt/rfcomm_input.c		netbt
+file netbt/rfcomm_session.c		netbt
+file netbt/rfcomm_socket.c		netbt
+file netbt/rfcomm_upper.c		netbt
+file netbt/sco_socket.c			netbt
+file netbt/sco_upper.c			netbt
 
 # IPv6
 file net/if_gif.c			gif			needs-count
